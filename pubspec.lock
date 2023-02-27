@@ -91,7 +91,7 @@ packages:
       name: dart_webrtc
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.0.12"
+    version: "1.0.15"
   events2:
     dependency: "direct main"
     description:
@@ -136,7 +136,7 @@ packages:
       name: flutter_webrtc
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.9.19"
+    version: "0.9.23"
   frontend_server_client:
     dependency: transitive
     description:
@@ -185,7 +185,7 @@ packages:
       name: js
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.6.3"
+    version: "0.6.5"
   logging:
     dependency: transitive
     description:
@@ -484,7 +484,7 @@ packages:
       name: webrtc_interface
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.0.10"
+    version: "1.0.11"
   win32:
     dependency: transitive
     description:

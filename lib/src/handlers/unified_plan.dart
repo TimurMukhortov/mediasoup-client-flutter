@@ -245,9 +245,9 @@ class UnifiedPlan extends HandlerInterface {
     MediaStream? stream;
 
     if (kIsWeb) {
-      stream!.addTrack(transceiver.receiver.track!, addToNative: false);
+      await stream!.addTrack(transceiver.receiver.track!, addToNative: false);
     } else {
-      stream!.addTrack(transceiver.receiver.track!);
+      await stream!.addTrack(transceiver.receiver.track!);
     }
 
     if (stream == null) {

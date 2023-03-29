@@ -242,23 +242,10 @@ class UnifiedPlan extends HandlerInterface {
     // Store in the map.
     _mapMidTransceiver[localId] = transceiver;
 
-    MediaStream? stream;
-
-    if (kIsWeb) {
-      await stream!.addTrack(transceiver.receiver.track!, addToNative: false);
-    } else {
-      await stream!.addTrack(transceiver.receiver.track!);
-    }
-
-    if (stream == null) {
-      throw ('Stream not found');
-    }
-
     return HandlerReceiveResult(
       localId: localId,
       track: transceiver.receiver.track!,
       rtpReceiver: transceiver.receiver,
-      stream: stream,
     );
   }
 
